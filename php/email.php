@@ -11,7 +11,7 @@ if(empty($errors))
 	$from_email = $_POST['email'];
 	$message = $_POST['message'];
  
-	$to_email = 'olegd1c@gmail.com';
+	$to_email = 'name@email.com';
 	$to_email_cc = $from_email;
  
 	$contact = "<p><strong>Name:</strong> $from_name</p>
