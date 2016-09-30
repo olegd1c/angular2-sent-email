@@ -6,7 +6,7 @@ $errors = '';
  
 if(empty($errors))
 {
-	/*
+	
     $from_name = $_POST['name'];
 	$from_email = $_POST['email'];
 	$message = $_POST['message'];
@@ -35,10 +35,11 @@ if(empty($errors))
  
 	$response_array['status'] = 'success';
 	echo json_encode($response_array);
-    */
-
+    
+/*
     $response_array['status'] = 'ok';
 	echo json_encode($response_array);
+	*/
 
 } else {
 	$response_array['status'] = 'error';
