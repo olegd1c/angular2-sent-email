@@ -1,0 +1,32 @@
+<form class="form-horizontal" id="contact-form" method="POST" action="email.php" (ngSubmit)="onSubmit()" > <!--[#tkdForm]="ngForm"-->
+  <div class="control-group">
+    <label class="control-label" for="name">Name</label>
+    <div class="controls">
+      <input type="text" name="name" id="name" placeholder="Ihr Name" [(ngModel)]="message.name" ngControl="name" 
+      
+        class="form-control input-lg" required aria-required=”true”>
+        <!-- #tkdForm.name="ngForm" -->
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="email">Email Addresse</label>
+    <div class="controls">
+      <input type="email" name="email" id="email" placeholder="Ihre email addresse" [(ngModel)]="message.email" ngControl="email"
+         
+        class="form-control input-lg" required aria-required=”true”>
+        <!-- #tkdForm.email="ngForm" -->
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="message">Mitteilung</label>
+    <div class="controls">
+      <textarea name="message" id="message" rows="6" class="form-control input-lg" required [(ngModel)]="message.message" ngControl="message"
+ 
+        aria-required=”true”></textarea>
+                <!-- #tkdForm.message="ngForm" --> 
+    </div>
+  </div>
+  <div class="form-actions"><!--  [hidden]="!tkdForm.form.valid" -->
+    <button type="submit" class="btn btn-default btn-lg btn-block">Kontaktiere uns</button>
+  </div>
+</form>
