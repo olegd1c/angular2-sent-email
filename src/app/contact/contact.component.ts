@@ -39,11 +39,11 @@ export class ContactComponent implements OnInit {
 
       if(response.status =='success'){
         this.message = {name: '', email: '', message: ''};
-        alert('Danke für deine Nachricht');
+        alert('Thank you for message');
       }
 
       if(response.status =='error'){
-        alert('Leider konnten wir deine Nachricht nicht versenden. Probier es nochmals oder sende die email direkt. Danke');
+        alert('We were unable to send your message. Try again or send the email directly. Thank you');
       }
       
     }

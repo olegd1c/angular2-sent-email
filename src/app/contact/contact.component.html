@@ -11,7 +11,7 @@
   <div class="control-group">
     <label class="control-label" for="email">Email Addresse</label>
     <div class="controls">
-      <input type="email" name="email" id="email" placeholder="Ihre email addresse" [(ngModel)]="message.email" ngControl="email"
+      <input type="email" name="email" id="email" placeholder="Your email addresse" [(ngModel)]="message.email" ngControl="email"
          
         class="form-control input-lg" required aria-required=”true”>
         <!-- #tkdForm.email="ngForm" -->
@@ -26,7 +26,7 @@
                 <!-- #tkdForm.message="ngForm" --> 
     </div>
   </div>
-  <div class="form-actions" [hidden]  ="!tkdForm.form.valid"><!--[hidden]  ="!tkdForm.form.valid" -->
+  <div class="form-actions" [hidden]  ="!tkdForm.form.valid">
     <button type="submit" class="btn btn-default btn-lg btn-block">Send message</button>
   </div>
 </form>
