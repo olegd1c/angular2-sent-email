@@ -15,8 +15,9 @@ import {Email}             from '../interfaces/Email';
 //providers: [Http, ContactService]
 
 export class ContactComponent implements OnInit {
-    constructor(private _contactService : ContactService) 
-    //constructor()    
+    
+    
+    constructor(private _contactService : ContactService)     
     { }
     ngOnInit() { }
 

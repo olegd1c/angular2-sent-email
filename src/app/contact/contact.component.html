@@ -1,4 +1,4 @@
-<form class="form-horizontal" id="contact-form" method="POST" action="email.php" (ngSubmit)="onSubmit()" > <!--[#tkdForm]="ngForm"-->
+<form class="form-horizontal" id="contact-form" method="POST" action="email.php" (ngSubmit)="onSubmit()" #tkdForm="ngForm"> <!---->
   <div class="control-group">
     <label class="control-label" for="name">Name</label>
     <div class="controls">
@@ -18,7 +18,7 @@
     </div>
   </div>
   <div class="control-group">
-    <label class="control-label" for="message">Mitteilung</label>
+    <label class="control-label" for="message">Message</label>
     <div class="controls">
       <textarea name="message" id="message" rows="6" class="form-control input-lg" required [(ngModel)]="message.message" ngControl="message"
  
@@ -26,7 +26,7 @@
                 <!-- #tkdForm.message="ngForm" --> 
     </div>
   </div>
-  <div class="form-actions"><!--  [hidden]="!tkdForm.form.valid" -->
-    <button type="submit" class="btn btn-default btn-lg btn-block">Kontaktiere uns</button>
+  <div class="form-actions" [hidden]  ="!tkdForm.form.valid"><!--[hidden]  ="!tkdForm.form.valid" -->
+    <button type="submit" class="btn btn-default btn-lg btn-block">Send message</button>
   </div>
 </form>
